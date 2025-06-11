@@ -168,6 +168,69 @@ forge test --fork-url https://aeneid.storyrpc.io/
 
 ---
 
+## 🚢 Deployment Guide
+
+To deploy your smart contracts on the **Aeneid Testnet**, follow these steps:
+
+### 1. 🦊 Install MetaMask
+
+If not already installed, download MetaMask for Chrome from [https://metamask.io/download](https://metamask.io/download)
+
+### 2. 🔑 Export Your Private Key
+
+* Open MetaMask
+* Click the **three dots** in the top-right corner of your account card
+* Click **Account Details**
+* Click **Export Private Key** and **copy it**
+
+⚠️ **Do not share this private key** — treat it like a password.
+
+### 3. 📄 Create `.env` File
+
+In your project root, create a `.env` file with the following content:
+
+```env
+PRIVATE_KEY=<your_private_key>
+```
+
+> Replace `<your_private_key>` with the one you copied from MetaMask.
+
+---
+
+### 4. ✅ Load Environment Variables
+
+Before running the deploy command, load your `.env` variables:
+
+```bash
+source .env
+```
+
+---
+
+### 5. 🚀 Deploy with Foundry
+
+Use the following command to deploy your contract and verify it on **StoryScan**:
+
+```bash
+forge create \
+  --rpc-url https://aeneid.storyrpc.io/ \
+  --private-key $PRIVATE_KEY \
+  ./src/Example.sol:Example \
+  --verify \
+  --verifier blockscout \
+  --verifier-url https://aeneid.storyscan.io/api/ \
+  --constructor-args \
+    0x77319B4031e6eF1250907aa00018B8B1c67a244b \
+    0x04fbd8a2e56dd85CFD5500A4A4DfA955B9f1dE6f \
+    0x2E896b0b2Fdb7457499B56AAaA4AE55BCB4Cd316 \
+    0xBe54FB168b3c982b7AaE60dB6CF75Bd8447b390E \
+    0xF2104833d386a2734a4eB3B8ad6FC6812F29E38E
+```
+
+✅ After successful deployment, you'll get the contract address and verification link.
+
+---
+
 ## 🙋‍♂️ Author
 
 **Tushar Pamnani** — [@tusharpamnani](https://github.com/tusharpamnani)
