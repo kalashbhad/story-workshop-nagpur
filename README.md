@@ -323,7 +323,7 @@ forge create \
     0xF2104833d386a2734a4eB3B8ad6FC6812F29E38E
 ```
 
-✅ If everything worked correctly, you should see something like Deployed to: `0x354EcEb2bd747ec0d4acC370b77Fe28415F4f220` in the console. Paste that address into ![the explorer](https://aeneid.storyscan.io/) and see your verified contract!
+✅ If everything worked correctly, you should see something like Deployed to: `0x354EcEb2bd747ec0d4acC370b77Fe28415F4f220` in the console. Paste that address into [the explorer](https://aeneid.storyscan.io/) and see your verified contract!
 
 ---
 
