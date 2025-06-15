@@ -1,6 +1,6 @@
 {
   "name": "story",
-  "version": "1.0.0",
+  "version": "1",
   "main": "index.js",
   "author": "tusharpamnani <tusharpamnani1@gmail.com>",
   "license": "MIT",
@@ -11,5 +11,6 @@
     "@story-protocol/protocol-periphery": "https://github.com/storyprotocol/protocol-periphery-v1",
     "erc6551": "^0.3.1",
     "solady": "^0.1.19"
-  }
+  },
+  "repository": "https://github.com/tusharpamnani/story-workshop-nagpur.git"
 }

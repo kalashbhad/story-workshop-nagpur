@@ -59,7 +59,7 @@ remappings = [
 #### 4. Remove Example Contracts
 
 ```bash
-rm src/Counter.sol script/Counter.s.sol test/Counter.t.sol
+ src/Counter.sol script/Counter.s.sol test/Counter.t.solrm
 ```
 
 ---
